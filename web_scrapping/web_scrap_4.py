@@ -26,9 +26,6 @@ for i in comment:
 
 
 
-
-
 time.sleep(20)
 driver.quit()
-
 
