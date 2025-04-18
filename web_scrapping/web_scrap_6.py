@@ -10,8 +10,8 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
 
-# Set up Chrome options
-chrome_options = Options()
+# # Set up Chrome options
+# chrome_options = Options()
 
 
 ##### 1. Use secondary Chrome profile in Users/mujahid folder -- creating new folder and copy all files and folder of main Chrome folder located at '/Users/mujahid/Library/Application Support/Google/Chrome' and delet all files and folder from profile-directory "Profile 2" .  it is the manual way to Create a custom profile directory 
@@ -21,13 +21,16 @@ chrome_options = Options()
 # chrome_options.add_argument(f"--user-data-dir={chrome_user_data}")
 # chrome_options.add_argument("--profile-directory=Profile 2")
 
+# Set up Chrome options
+chrome_options = Options()
+
 #### Create a custom profile directory to avoid conflicts by code 
 custom_profile = os.path.expanduser("~/selenium_profile")
 if not os.path.exists(custom_profile):
     os.makedirs(custom_profile)
 
 chrome_options.add_argument(f"--user-data-dir={custom_profile}")
-chrome_options.add_argument("--profile-directory=Default")  # Optional
+chrome_options.add_argument("--profile-directory=Default") 
 
 
 
