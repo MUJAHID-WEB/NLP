@@ -4,11 +4,12 @@ This repository contains automated tests for a login page using Playwright.
 
 ## Setup
 
-1. Clone the repository: `git clone https://github.com/your-username/login-tests.git`
+1. Clone the repository: `git clone https://github.com/MUJAHID-WEB/NLP.git` and go to directory : `cd login-tests`
 2. Install dependencies: `npm install`
 3. Run tests: `npx playwright test`
-4. To show report: `npx playwright show-report`
-5. Run tests with HTML report: `npx playwright test --reporter=html`
+4. Run tests with HTML report: `npx playwright test --reporter=html`
+5. To show report: `npx playwright show-report`
+
 
 ## Branching Strategy
 
